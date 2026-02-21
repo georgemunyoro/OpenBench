@@ -41,9 +41,6 @@ services:
     volumes:
       - media_data:/app/Media
       - static_data:/app/staticfiles
-      - ./Config:/app/Config:ro
-      - ./Engines:/app/Engines:ro
-      - ./Books:/app/Books:ro
 
   client:
     build:

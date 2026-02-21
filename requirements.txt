@@ -4,3 +4,4 @@ requests
 scipy
 gunicorn
 psycopg2-binary
+whitenoise

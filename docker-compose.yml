@@ -50,7 +50,7 @@ services:
     depends_on:
       - server
     environment:
-      OPENBENCH_SERVER: http://server:8000
+      OPENBENCH_SERVER: ${OPENBENCH_SERVER:-http://server:8000}
       OPENBENCH_USERNAME: ${OPENBENCH_USERNAME:?Set OPENBENCH_USERNAME}
       OPENBENCH_PASSWORD: ${OPENBENCH_PASSWORD:?Set OPENBENCH_PASSWORD}
     command: ["-T", "${CLIENT_THREADS:-2}", "-N", "${CLIENT_SOCKETS:-1}"]
